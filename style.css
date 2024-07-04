@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* https://fonts.google.com/selection/embed */
+
 *{
     padding: 0%;
     margin: 0%;
@@ -8,18 +10,41 @@ h1{
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-decoration: overline;
     font-size: 50px;
-    text-align: center;
+    
+}
+button{
+    background-color: tomato;
+    padding: 10px 20px;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: cornflowerblue;
+    border-radius: 8px;
+    font-size: 24px;
+    margin: 20px 0;
+    transition: all 1s;
+    cursor: pointer;
 }
 #pid{
-    background-color: rgb(105, 64, 49);
-    height: 600px;
+    /* background-color: rgb(105, 64, 49); */
+    /* background-image: linear-gradient(180deg, red, blue); */
+    background-image:linear-gradient(to left, rgb(33, 145, 120), transparent), url("https://img.freepik.com/free-photo/person-office-analyzing-checking-finance-graphs_23-2150377194.jpg?t=st=1720104890~exp=1720108490~hmac=af16a6f2b872ae821b6d8ae30f59cc462913a6ea93a2f2483795498160da13ee&w=826");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     padding: 200px 0;
-    width: 600px;
+    width: 1550px;
     /* margin-top: 40px;
     margin-bottom: 10px; 
     margin-left:auto;
     margin-right: auto;*/
-    margin: 40px auto 10px;
+    margin: 0 auto 10px;
+    text-align: center;
+    /* clip path css */
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.pi:hover{
+    background-color: green;
 }
